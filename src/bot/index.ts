@@ -3,6 +3,7 @@ import { env } from 'node:process';
 import { MyContext, Session } from './types';
 import { generateUpdateMiddleware } from 'telegraf-middleware-console-time';
 import dotenv from 'dotenv';
+import attachUser from './middlewares/attachUser';
 import { ignoreOld, sequentialize } from 'grammy-middlewares';
 import { bot as menu } from './menu';
 
@@ -29,6 +30,7 @@ baseBot.use(
   })
 );
 
+baseBot.use(attachUser);
 baseBot.use(menu);
 
 export async function start(): Promise<void> {
