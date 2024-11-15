@@ -13,7 +13,7 @@ async function startMessage(ctx: MyContext) {
 
   let text = `Today, we stand united for the future of the TON Blockchain!
 
-We, the people of TON, call on the ecosystem leads and KOLs to stop undermining the chain with repetitive, self-serving Tap2Earn games. It’s time to give the biggest narrative in crypto the space it truly deserves, time to rally for the TON memecoin ecosystem. #DigitalResistance`;
+We, the people of TON, call on TonFoundation and the TonSociety to stop undermining the chain with repetitive, self-serving Tap2Earn games. It’s time to give the biggest narrative in crypto the space it truly deserves, time to rally for the TON memecoin ecosystem. #DigitalResistance`;
   await ctx.replyWithPhoto("https://ibb.co/g6NPPWF", {
     caption: text,
     reply_markup: keyboard,
